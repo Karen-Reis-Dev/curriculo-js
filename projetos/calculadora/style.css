@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family:
+    Segoe UI,
+    Arial;
+  background: linear-gradient(135deg, #0f172a, #312e81);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+main {
+  width: min(400px, 90%);
+}
+a {
+  color: #c7d2fe;
+  text-decoration: none;
+}
+.calculadora {
+  margin-top: 20px;
+  background: #111827;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px #0007;
+}
+#tela {
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  padding: 15px;
+  overflow: hidden;
+}
+.teclas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  height: 62px;
+  border: 0;
+  border-radius: 15px;
+  background: #273449;
+  color: white;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+.operador {
+  background: #6d28d9;
+}
+.especial {
+  background: #475569;
+}
+.igual {
+  background: #2563eb;
+}
+.zero {
+  grid-column: span 2;
+}
+button:hover {
+  filter: brightness(1.2);
+}

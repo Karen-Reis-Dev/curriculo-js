@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículo de Karen Silva dos Reis - Técnica em Desenvolvimento de Sistemas" />
+  <title>Karen Silva | Currículo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="navegacao container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">&lt;Karen<span>Dev</span>/&gt;</a>
+      <button id="botao-menu" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+      <div id="menu" class="menu">
+        <a href="#inicio" class="ativo">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">
+          🌙
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section id="inicio" class="hero">
+      <div class="hero-linework-bg"></div>
+      <div class="container hero-conteudo revelar">
+        <div class="hero-foto-wrapper">
+          <div class="hero-linework-ring"></div>
+          <img src="img/perfil2.jpeg" alt="Karen Silva dos Reis - Perfil" class="foto-perfil" />
+        </div>
+        <p class="saudacao">Olá, eu sou</p>
+        <h1 id="nome-hero">Karen Silva dos Reis</h1>
+        <p id="texto-digitacao" class="cargo" aria-live="polite"></p>
+        <p id="descricao-hero" class="hero-descricao">
+          Técnica em Desenvolvimento de Sistemas, apaixonada por tecnologia,
+          inovação e por transformar ideias em soluções digitais.
+        </p>
+        <div class="acoes">
+          <a href="#projetos" class="botao primario">Ver projetos</a>
+          <a href="#contato" class="botao secundario">Entre em contato</a>
+        </div>
+      </div>
+      <div class="hero-linework-bottom">
+        <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+          <path d="M0,20 Q300,0 600,20 T1200,20 L1200,40 L0,40 Z" fill="var(--cor-fundo)" />
+          <path d="M0,25 Q300,5 600,25 T1200,25" stroke="#8B6B4D" stroke-width="1.5" fill="none" opacity="0.3" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="secao">
+      <div class="container revelar">
+        <div class="secao-linework">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <line x1="0" y1="10" x2="20" y2="10" stroke="#8B6B4D" stroke-width="2" opacity="0.4" />
+            <line x1="25" y1="10" x2="35" y2="0" stroke="#A67B5B" stroke-width="1.5" opacity="0.3" />
+            <line x1="40" y1="10" x2="60" y2="10" stroke="#8B6B4D" stroke-width="2" opacity="0.4" />
+          </svg>
+        </div>
+        <p class="rotulo">QUEM SOU</p>
+        <h2>Sobre mim</h2>
+        <div class="sobre-grid">
+          <div>
+            <p id="descricao-sobre" class="texto-grande">
+              Técnica em Desenvolvimento de Sistemas, com 19 anos, buscando
+              minha primeira oportunidade na área de tecnologia. Tenho
+              facilidade para aprender novas ferramentas, trabalho bem em
+              equipe e sou apaixonada por resolver problemas através da
+              programação.
+            </p>
+          </div>
+          <div class="info-grid">
+            <article class="info-card">
+              <span>📍</span><small>Cidade</small>
+              <strong id="info-cidade">Juiz de Fora - MG</strong>
+            </article>
+            <article class="info-card">
+              <span>🎂</span><small>Idade</small><strong>19 anos</strong>
+            </article>
+            <article class="info-card">
+              <span>🎓</span><small>Curso</small>
+              <strong id="info-curso">Técnico em Desenvolvimento de Sistemas</strong>
+            </article>
+            <article class="info-card">
+              <span>🎯</span><small>Objetivo</small>
+              <strong id="info-objetivo">Primeira oportunidade em tecnologia</strong>
+            </article>
+            <article class="info-card">
+              <span>🗓️</span><small>Disponibilidade</small>
+              <strong>Estágio ou Júnior</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades" class="secao fundo-alternativo">
+      <div class="container revelar">
+        <div class="secao-linework">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <line x1="0" y1="5" x2="15" y2="15" stroke="#C4A882" stroke-width="2" opacity="0.5" />
+            <line x1="20" y1="10" x2="40" y2="10" stroke="#C4A882" stroke-width="2" opacity="0.5" />
+            <line x1="45" y1="15" x2="60" y2="5" stroke="#C4A882" stroke-width="2" opacity="0.5" />
+          </svg>
+        </div>
+        <p class="rotulo">O QUE SEI FAZER</p>
+        <h2>Minhas habilidades</h2>
+        <div id="filtros-habilidades" class="filtros">
+          <button class="ativo" data-filtro="todas">Todas</button>
+          <button data-filtro="tecnologia">Tecnologia</button>
+          <button data-filtro="pessoal">Pessoal</button>
+        </div>
+        <div id="lista-habilidades" class="habilidades-lista"></div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="secao">
+      <div class="container revelar">
+        <div class="secao-linework">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <rect x="0" y="5" width="8" height="8" fill="none" stroke="#1B2A4A" stroke-width="1.5" opacity="0.4" />
+            <line x1="14" y1="9" x2="30" y2="9" stroke="#1B2A4A" stroke-width="1.5" opacity="0.4" />
+            <circle cx="40" cy="10" r="6" fill="none" stroke="#1B2A4A" stroke-width="1.5" opacity="0.4" />
+            <line x1="48" y1="10" x2="60" y2="10" stroke="#1B2A4A" stroke-width="1.5" opacity="0.4" />
+          </svg>
+        </div>
+        <p class="rotulo">PRÁTICA E CRIATIVIDADE</p>
+        <h2>Projetos no GitHub</h2>
+        <p class="subtitulo">Meus repositórios públicos mais recentes.</p>
+        <div id="lista-projetos" class="projetos-grid"></div>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="https://github.com/Karen-Reis-Dev" target="_blank" rel="noopener" class="botao primario">
+            <i class="fab fa-github" style="margin-right: 8px;"></i> Ver todos no GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="secao contato">
+      <div class="contato-linework-bg"></div>
+      <div class="container revelar">
+        <div class="secao-linework">
+          <svg width="60" height="20" viewBox="0 0 60 20">
+            <line x1="0" y1="10" x2="20" y2="10" stroke="#E8D5C4" stroke-width="2" opacity="0.4" />
+            <path d="M25,5 L30,15 L35,5" stroke="#E8D5C4" stroke-width="1.5" fill="none" opacity="0.4" />
+            <line x1="40" y1="10" x2="60" y2="10" stroke="#E8D5C4" stroke-width="2" opacity="0.4" />
+          </svg>
+        </div>
+        <p class="rotulo" style="color: #C4A882;">VAMOS CONVERSAR</p>
+        <h2 style="color: #F5F0EB;">Entre em contato</h2>
+        <div class="contato-grid">
+          <div class="contato-info">
+            <h3>Estou disponível para novas oportunidades!</h3>
+            <p>
+              Você pode me encontrar nos canais abaixo ou enviar uma mensagem.
+            </p>
+            <p><i class="fas fa-envelope" style="width: 24px;"></i> karendosreis610@gmail.com</p>
+            <p><i class="fas fa-phone" style="width: 24px;"></i> (32) 99923-9919</p>
+            <p><i class="fas fa-map-marker-alt" style="width: 24px;"></i> <span id="contato-cidade">Juiz de Fora -
+                MG</span></p>
+            <p>
+              <a href="https://github.com/Karen-Reis-Dev" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub ↗
+              </a>
+            </p>
+          </div>
+          <form id="form-contato" class="card">
+            <label>Nome<input name="nome" required /></label>
+            <label>E-mail<input name="email" type="email" required /></label>
+            <label>Assunto<input name="assunto" required /></label>
+            <label>Mensagem<textarea name="mensagem" rows="5" required></textarea></label>
+            <button class="botao primario" type="submit">
+              <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Enviar mensagem
+            </button>
+            <p id="mensagem-form" class="mensagem-form" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container rodape">
+      <div>
+        <strong id="nome-rodape">Karen Silva dos Reis</strong>
+        <p>© <span id="ano-atual"></span> · Feito com HTML, CSS e JavaScript.</p>
+      </div>
+      <div>
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="https://github.com/Karen-Reis-Dev" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="voltar-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
