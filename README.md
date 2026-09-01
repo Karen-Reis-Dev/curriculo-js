@@ -47,11 +47,17 @@ https://github.com/Karen-Reis-Dev
 
 ## 📁 Estrutura do Projeto
 curriculo-karen/
+
 ├── index.html # Estrutura principal
+
 ├── style.css # Estilos e tema
+
 ├── script.js # Funcionalidades interativas
+
 ├── img/
+
 │ └── perfil2.jpeg # Foto de perfil
+
 └── README.md # Documentação
 
 
