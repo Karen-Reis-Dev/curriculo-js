@@ -46,3 +46,40 @@ https://github.com/Karen-Reis-Dev
 ---
 
 ## 📁 Estrutura do Projeto
+curriculo-karen/
+├── index.html # Estrutura principal
+├── style.css # Estilos e tema
+├── script.js # Funcionalidades interativas
+├── img/
+│ └── perfil2.jpeg # Foto de perfil
+└── README.md # Documentação
+
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **HTML5** - Estrutura semântica
+- **CSS3** - Flexbox, Grid, Variáveis CSS, Animações
+- **JavaScript ES6+** - DOM, Fetch API, LocalStorage
+
+### Integrações
+- **Font Awesome** - Ícones
+- **GitHub API** - Busca de repositórios públicos
+- **Google Fonts** - Inter e Segoe UI
+
+---
+
+## 📦 Como Executar Localmente
+
+### Pré-requisitos
+- Navegador moderno (Chrome, Firefox, Edge, Safari)
+- VS Code (recomendado) com extensão **Live Server**
+
+### Passos
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Karen-Reis-Dev/curriculo-karen.git
+   cd curriculo-karen
